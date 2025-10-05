@@ -1,0 +1,8 @@
+6M0J.pdb: Crystal structure of SARS-CoV-2 spike receptor-binding domain bound with ACE2 
+using pymol to create spike target PDB file
+PDFfixer is apllied to to prepare and repair protein structure
+RFdiffusion/Protein MPNN are used to binder design 
+affinity evaluation/stability evaluation/aggregation risk evaluation/ immumogenicity evaluation/mutation evaluation to improve design
+affinity for AF2_prediction_rank_1.pdb: ΔG=-8.4kcal.mol-1 Kd=7.4e-7M
+stability evaluation for AF2_prediction_rank_1.pdb: total energy: 1799.44
+aggregation risk for AF2_prediction_rank_1.pdb:AF2_prediction1_aggregation.png
