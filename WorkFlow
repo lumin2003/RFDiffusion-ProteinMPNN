@@ -1,5 +1,5 @@
 6M0J.pdb: Crystal structure of SARS-CoV-2 spike receptor-binding domain bound with ACE2 
-using pymol to create spike target PDB file
+using pymol to find targetable residuals and create spike target PDB file
 PDFfixer is apllied to to prepare and repair protein structure
 RFdiffusion/Protein MPNN are used to binder design 
 affinity evaluation/stability evaluation/aggregation risk evaluation/ immumogenicity evaluation/mutation evaluation to improve design
