@@ -1,8 +1,23 @@
-6M0J.pdb: Crystal structure of SARS-CoV-2 spike receptor-binding domain bound with ACE2 
-using pymol to find targetable residuals and create spike target PDB file
-PDFfixer is apllied to to prepare and repair protein structure
-RFdiffusion/Protein MPNN are used to binder design 
-affinity evaluation/stability evaluation/aggregation risk evaluation/ immumogenicity evaluation/mutation evaluation to improve design
-affinity for AF2_prediction_rank_1.pdb: ΔG=-8.4kcal.mol-1 Kd=7.4e-7M
-stability evaluation for AF2_prediction_rank_1.pdb: total energy: 1799.44
-aggregation risk for AF2_prediction_rank_1.pdb:AF2_prediction1_aggregation.png
+Structure Preparation and Target Residue Identification
+1. 6M0J.pdb (Crystal structure of SARS-CoV-2 spike RBD bound to ACE2) was used as the initial template.
+2. PyMOL was applied to visualize the RBD–ACE2 interface, identify targetable residues, and generate the spike-focused target PDB file.
+3. PDFfixer was used to repair and preprocess the protein structure to ensure compatibility with downstream modeling tools.
+
+Binder Design Pipeline
+1. RFdiffusion was used to generate initial binder scaffolds against selected RBD interface residues.
+2. ProteinMPNN was employed for sequence design and optimization on the RFdiffusion-generated backbones.
+
+Computational Evaluation
+To improve and filter candidate binders, multiple structure-based evaluations were performed:
+1. Binding Affinity Evaluation
+For AF2_prediction_rank_1.pdb, predicted binding affinity:
+ΔG = –8.4 kcal·mol⁻¹, corresponding to Kd ≈ 7.4 × 10⁻⁷ M.
+2. Stability Assessment
+Total predicted structural energy for AF2_prediction_rank_1.pdb:
+1799.44 (arbitrary units; method-specific scale).
+3. Aggregation Risk Analysis
+Aggregation-prone regions were assessed for AF2_prediction_rank_1.pdb, and results were summarized in:
+AF2_prediction1_aggregation.png
+4. Additional Evaluations
+Immunogenicity evaluation
+Mutation tolerance evaluation
